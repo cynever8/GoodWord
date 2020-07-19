@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ["first", "second", "third", "fourth", 3, 5, 8];
+        let obj = [
+            { reliefType: "临时救助", money: 44871.77 },
+            { reliefType: "取暖救助", money: 34441.5 },
+            { reliefType: "困境家庭入住福利机构", money: 2400 },
+            { reliefType: "城乡低保", money: 2294398.08 },
+            { reliefType: "城乡低收入", money: 1100 },
+            { reliefType: "生活困难补助", money: 34740 },
+        ]
+
+        // 遍历数组😀
+        arr.forEach(function (element, index) {
+            console.log(element + '/' + index);
+        })
+
+        // 遍历数组中的对象😀
+        let legend = [];
+        let series = [];
+        for (const iterator of obj) {
+            legend.push(iterator.reliefType);
+            let obj = {}
+            obj.value = iterator.money;
+            obj.name = iterator.reliefType;
+            series.push(obj)
+        }
+        console.log("series", series)
+        console.log("legend", legend)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "06_Env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.2.0"
+  },
+  "scripts": {
+    "eslint":"eslint src"
+  }
+}

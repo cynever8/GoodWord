@@ -1,0 +1,17 @@
+{
+  "name": "08_Plugins",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "eslint":"eslint src"
+  }
+}

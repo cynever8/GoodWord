@@ -1,0 +1,23 @@
+{
+  "name": "The_4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.2.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2020": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "off"
+    }
+  }
+}
