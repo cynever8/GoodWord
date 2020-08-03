@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    var keys = [];
+    var jsonObject1 = {
+        "name": "xiaoming",
+        "age": 29
+    }
+    function name() {
+        for (let p1 in jsonObject1) {
+            if (jsonObject1.hasOwnProperty(p1))
+                keys.push(p1);
+        }
+        alert(keys);
+    }
+    new name();
+
+</script>
