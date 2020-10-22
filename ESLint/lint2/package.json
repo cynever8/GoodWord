@@ -1,0 +1,24 @@
+{
+  "name": "lint2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "format": "prettier --write '**/*.{js,css,md}'"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "eslint": "^7.7.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "author": "",
+  "license": "ISC"
+}

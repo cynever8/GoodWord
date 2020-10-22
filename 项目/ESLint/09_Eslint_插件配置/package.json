@@ -1,0 +1,10 @@
+{
+  "name": "eslint-plugins",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-plugin-vue": "^6.2.2"
+  }
+}

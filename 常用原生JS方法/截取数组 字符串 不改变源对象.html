@@ -21,9 +21,16 @@
                 也可以写入正则去分割
      -->
     <script>
+
+        let a = "新街口街道"
+        let b = a.indexOf('街道')
+        console.log("b", b)
+        // let c = a.slice(0, -2)
+        // console.log("b", b)
+
         let date = "2020-05-14 11:33:20";
         let date2 = date.substr(0, 10);
-        let date3 = date.substring(0, 10);
+        let date3 = date.substring(0,10);
         let date4 = date.slice(-9);
         // let date4 = date.slice(0, 10);
         console.log("date", date)
@@ -35,12 +42,12 @@
         // let arr2 = arr.slice(1, 3);
         let arr2 = arr.slice(-1);
         console.log("arr", arr)
-        console.log("arr2", arr2)
+        console.log("arr2", arr2)// [3]
 
         let date5 = "2020-05-04 10:39:15";
         let str = date5.split(" ") // 已空格为分隔符
         console.log("date5", date5)
-        console.log("str", str)
+        console.log("str", str)// ["2020-05-04", "10:39:15"]
     </script>
 </body>
 
