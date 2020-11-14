@@ -38,7 +38,21 @@ export default {
         title: {
           text: 'ECharts 入门示例',
         },
-        tooltip: {},
+        tooltip: {
+          type: 'showTip',
+          trigger: 'axis',
+          axisPointer: {
+            type: 'cross',
+            animation: false,
+            label: {
+              backgroundColor: '#505765',
+            },
+          },
+          formatter(data) {
+            return `${data[0].axisValue} ${data[0].data}`;
+          },
+          // formatter: '{b0}: {c0}<br />{b1}: {c1}'
+        },
         xAxis: {
           data: optionData.map((r) => r.name),
         },
@@ -59,6 +73,7 @@ export default {
           type: 'category',
           data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         },
+        color: ['#000', '#ddd'],
         yAxis: {
           type: 'value',
         },
@@ -67,21 +82,25 @@ export default {
             data: [820, 932, 901, 934, 1290, 1330, 1320],
             type: 'line',
           },
+          {
+            data: [1820, 1932, 1901, 1934, 290, 130, 1320],
+            type: 'line',
+          },
         ],
       },
     };
   },
-  created() {
-    // console.log('this.optionData.map(r=>r.name),',this.optionData.map(r=>r.name),);
-  },
   mounted() {
-    this.getEcharts(this.$refs.chart,this.option);
-    this.getEcharts(this.$refs.chart2,this.option2);
+    this.getEcharts(this.$refs.chart, this.option, (data) => {
+      console.log('data', data);
+    });
+    this.getEcharts(this.$refs.chart2, this.option2);
   },
   methods: {
-    getEcharts(dom, style) {
+    getEcharts(dom, style, onClick) {
       var myChart = this.$echarts.init(dom);
       myChart.setOption(style);
+      if (onClick) myChart.on('click', onClick);
     },
   },
 };
