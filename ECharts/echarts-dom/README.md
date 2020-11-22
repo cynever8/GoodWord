@@ -1,24 +1,6 @@
-# echarts-dom
 
-## Project setup
-```
-npm install
-```
+### 技术要点
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. 用map函数处理图表数据
+2. 使用mixin 构建公共组件
+3. 给echarts 添加点击事件
