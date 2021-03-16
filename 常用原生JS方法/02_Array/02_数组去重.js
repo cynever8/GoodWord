@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-27 10:33:28
  * @LastEditors: 王一丁
- * @LastEditTime: 2020-09-30 11:22:33
+ * @LastEditTime: 2021-03-14 21:40:31
  * @FilePath: \MyDemod:\GIt\GoodWord\常用原生JS方法\数组去重.js
  */ 
 // 利用ES6 Set去重（ES6中最常用）---------
@@ -26,8 +26,9 @@ function arrayNonRepeatfy(arr) {
             array.push(arr[i]);
         }
     }
+    console.log("arrayNonRepeatfy -> map", map)
     return array;
 }
-var arr = [1, 1, 'true', 'true', true, true, 15, 15, false, false, undefined, undefined, null, null, NaN, NaN, 'NaN', 0, 0, 'a', 'a', {}, {}];
-console.log(unique(arr))
+var arr2 = [1, 1, 'true', 'true', true, true, 15, 15, false, false, undefined, undefined, null, null, NaN, NaN, 'NaN', 0, 0, 'a', 'a', {}, {}];
+console.log(arrayNonRepeatfy(arr2))
 //[1, "a", "true", true, 15, false, 1, {…}, null, NaN, NaN, "NaN", 0, "a", {…}, undefined]

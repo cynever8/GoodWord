@@ -1,0 +1,34 @@
+<!--
+ * @Date: 2021-03-16 14:02:09
+ * @LastEditors: 王一丁
+ * @LastEditTime: 2021-03-16 14:02:18
+ * @annotation: 文件名
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  export function GetRequest() {
+    let url = window.location.href;
+    let isToken = url.indexOf("?");
+    let theRequest = new Object();
+    if (isToken !== -1) {
+      // token存在
+      let lint = url.split("?")[1];
+      let strs = lint.split("&");
+      console.log("strs", strs);
+      // setToken()
+      for (let i = 0; i < strs.length; i++) {
+        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+      }
+    }
+    return theRequest;
+  }
+</script>

@@ -1,0 +1,28 @@
+<!--
+ * @Date: 2021-03-10 23:50:26
+ * @LastEditors: 王一丁
+ * @LastEditTime: 2021-03-14 22:31:32
+ * @annotation: 文件名
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let arr = [1, 2, 5, 1, 3, 4, 5];
+  // console.log("arr", arr);
+  // //   console.log("arr.pop()", arr.sort((a,b)=>b-a));
+  // console.log("arr.pop()", arr.slice(1, 2));
+  // console.log("arr", arr);
+  arr.sort((a, b) => {
+    console.log("a=>", a, "b=>", b);
+    return a - b;
+  });
+  console.log("arr", arr);
+</script>

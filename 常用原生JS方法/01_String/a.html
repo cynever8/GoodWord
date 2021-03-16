@@ -1,0 +1,57 @@
+<!--
+ * @Date: 2021-03-08 23:05:54
+ * @LastEditors: 王一丁
+ * @LastEditTime: 2021-03-09 18:49:55
+ * @annotation: 文件名
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  // 1. charAt() 返回指定位置的字符
+  let str = "123456";
+  let str2 = "123456";
+  console.log("str.charAt(1)", str.charAt(1));
+  // 2. concat() 用于连接两个或多个字符串
+  console.log("str.concat(str2)", str.concat(str2));
+  // 3. indexOf() 返回指定字符串在字符串中首次出现的位置. 匹配不到则返回-1
+  let str3 = "11223344";
+  console.log("str.indexOf", str3.indexOf(3));
+  // 4. match() 在字符串内检索指定的值, 或找到一个或多个争着表达式的匹配.匹配不到返回null
+  console.log("str.match()", str.match(3));
+  // 5. replace() 用于在字符串中用一些字符串替换另一些字符,或替换一个与正则表达式匹配的子串
+  let string = "hello world!";
+  let reg = /world/;
+  console.log("string.replace", string.replace("!", "~"));
+  console.log("string.replace", string.replace(reg, "~"));
+  // 6. search()    用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。无匹配返回-1。
+  console.log("string.search", string.search("!"));
+  console.log("string.search", string.search(reg));
+  console.log("str.indexOf", string.indexOf('!'));
+  console.log("str.match()", string.match('!'));
+
+  // 7. slice 提取
+  let str4 = "hello world !!!"
+  console.log('str4.splice()',str4.slice(1,2)); // 1-2提取
+  console.log('str4.splice()',str4.slice(-1)); // -1个提取
+  console.log('str4.splice()',str4.slice(0,-3)); // 删除倒数前3个
+
+  // 8. substr() str.substr(startIndex,length)  方法可在字符串中抽取从 start 下标开始的指定数目的字符
+  // 8. substr() str.substring(startIndex,endIndex)  方法用于提取字符串中介于两个指定下标之间的字符。
+  let str5 = "hello"
+  console.log('str5.substr(0,)',str5.substr(0,3));
+  console.log('str5.substr(0,)',str5.substring(0,3));
+
+  // 9. split
+  let str6 = "123456";
+  console.log('str6.split()',str6.split());
+  // [123456]
+</script>
