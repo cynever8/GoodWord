@@ -19,7 +19,7 @@ export default {
   name: "welfareSchool",
   components: {
     TitleBox,
-    VideoPlayers
+    VideoPlayers,
   },
   data() {
     return {
@@ -30,9 +30,9 @@ export default {
       sources: {
         src: "",
         poster: "",
-        aspectRatio: "12:5"
+        aspectRatio: "12:5",
       },
-      schoolData: ""
+      schoolData: "",
     };
   },
   created() {
@@ -44,7 +44,7 @@ export default {
         // 首页展示4个
         size: 1,
         current: 1,
-        mainType: 1
+        mainType: 1,
       };
       let res = await getWelfareContentApi(params);
       if (res.code === 200) {
@@ -57,8 +57,8 @@ export default {
       this.sources.poster = this.schoolData.cover;
       // FIXME: 父组件调用子组件的方法
       this.$refs.videoSources.resetDataSources(this.sources);
-    }
-  }
+    },
+  },
 };
 </script>
 
