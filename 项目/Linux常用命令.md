@@ -3,7 +3,7 @@
  * @Autor: Leon
  * @Date: 2020-01-07 19:17:41
  * @LastEditors: 王一丁
- * @LastEditTime: 2021-04-19 14:29:53
+ * @LastEditTime: 2021-04-22 16:24:08
  -->
 
 # 常用命令
@@ -46,10 +46,10 @@
 11. source /etc/profile(文件路径) 修改文件后更新文件内容
 12. `tar -zxvf saber.tar.gz` gz 文件解压
 13. `unzip` zip 文件解压
-14. `scp ./home.zip root@101.36.160.166:~/xczg/mobile` 将当前服务器文件发送到其他服务器
-15. `scp root@172.16.0.41:/root/dist.zip /xczg/mobile/` 将目标服务器的文件复制到当前服务器 (172.16.0.41 西城 PC 端内网服务器地址)
-16. `ifconfig eth0` 查看内网地址
-17. `ssh root@101.36.160.166` 跳转到服务器 (101.36.160.166 西城家园App外网地址)
+14. `ssh root@101.36.160.166` 跳转到服务器 (101.36.160.166 西城家园App外网地址)
+15. `scp ./home.zip root@101.36.160.166:~/xczg/mobile` 将当前服务器文件发送到其他服务器
+16. `scp root@172.16.0.41:/root/dist.zip /xczg/mobile/` 将目标服务器的文件复制到当前服务器 (172.16.0.41 西城 PC 端内网服务器地址)
+17. `ifconfig eth0` 查看内网地址
 
 ## Nginx
 
